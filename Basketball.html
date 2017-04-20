@@ -1,62 +1,72 @@
-<!doctype html>
-<html lang="en">
+﻿<!doctype html>
 <head>
-  <title>Awesome Boilerplate</title>
+  <title>Basketball</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <meta http-equiv="Content-Type"content="text/html; charset=UTF-8">
-  <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="index.css">
 </head>
+<nav>
+<p> <a style="color: white;"href="file:///C:/Users/Esma/Documents/GitHub/Dreamteam/home.html">Home</a> 
+    <a style="color: white;"href="file:///C:/Users/Esma/Documents/GitHub/Dreamteam/Basketball.html">add player</a>
+    <a style="color: white;"href="file:///C:/Users/Esma/Documents/GitHub/Dreamteam/players.html">players</a> </p>
+</nav>
 
-<body>
+<body class= "cursive">
+
 	<header role="banner">
 		<div>
-			<h1><span>Awesome</span> Boilerplate</h1>
-			<p>
-				<label>Jump To Content</label><br>
-				<label>Jump To Footer</label><br>
-				<label>Jump To Kitties</label>
-			</p>
+			<h1 class= "cursive"><span>Basketball</span> Formular</h1>
+			</br>
 			<article>
-			Vorname <input type="text"size="30"maxlength="40"value=""/>
-			<br></br>
-			Nachname <input type="text"size="30"maxlength="40"value=""/>
-			<br></br>
-			Verein <input type="text"size="30"maxlength="40"value=""/>
-			<br></br>
-			Headcoach <input type="text"size="30"maxlength="40"value=""/>
-			<br></br>
-			Assistant Coach <input type="text"size="30"maxlength="40"value=""/>
-			<br></br>
-			Aktiv<br/>
-			<input type="checkbox"name="Aktiv"
+			<table>
+			<tr><td>Vorname: </td>
+			<td><input name="name" type= "text" size="30"maxlength="40"value=""/></td></tr>
+
+			<tr><td>Nachname: </td>
+			<td><input name="name" type= "text" size="30"maxlength="40"value=""/></td></tr>
+			
+			<tr><td>Verein: </td>
+			<td><input name="name" type= "text" size="30"maxlength="40"value=""/></td></tr>
+
+			<tr><td>Headcoach: </td>
+			<td><input name="name" type= "text" size="30"maxlength="40"value=""/></td></tr>
+
+			<tr><td>Assistant Coach: </td>
+			<td><input name="name" type= "text" size="30"maxlength="40"value=""/></td></tr>
+
+			<tr><td>Aktiv: </td>
+			<td><input type="checkbox"name="Aktiv"
 			value="Ja"checked="checked"/>Ja<br/>
 			<input type="checkbox"name="Aktiv"
-			value="Nein"/>Nein<br/>
-			<br></br>
-			Position
-			<select name="Position"size="1">
+			value="Nein"/>Nein<br/></td></tr>
+
+			<tr><td>Position: </td>
+			<td><select name="Position"size="1">
 			<option value="Center">Center</option>
 			<option value="Guard">Guard</option>
 			<option value="Power Forward">Power Forward</option>
 			<option value="Wing"selected="selected">
 			Wing</option>
 			<option value="Small Forward">Small Forward</option>
-			</select>
-			<br></br>
-			Rückennnummer <input type="number"size="30"maxlength="40"value="Rückennnummer"/>
-			<br></br>
-			Geburtsjahr <input type="number"min="1970"max="1999"step="1"><br>
-			</article>
-			<br></br>
-			Favorit markieren <input type="checkbox"name="favorit"
-			value="Ja"checked="checked"/><br/>
+			</select></td></tr>
+
+			<tr><td>Rückennummer: </td>
+			<td><input type="number"size="30"maxlength="40"value="Rückennnummer"/></td></tr>
+			
+			<tr><td>Geburtsjahr: </td>
+			<td><input type="number"min="1970"max="1999"step="1"></td></tr>
+
+			<tr><td>Favorit markieren: </td>
+			<td><input type="checkbox"name="favorit"
+			value="Ja"checked="checked"/></td></tr>
+			
+			
+			<tr><td><br></br><a style="margin-left: 220px;"href="htpp://kittey.rockz:1111/api/V1/addPlayer"><input type="button"name="absenden"value="Absenden"/a></td></tr>
+
+			</table>
+			
 		</div>
 	</header>
 	
-	<footer>
-		<img src="https://www.shirtlabor.de/media/shirtlabor/user_patterns/450x450/basketball-real-3-2c-4571.svg"></
-	</footer>
-	<script src="design/index.js"></script>
+	
 </body>
-</html>
