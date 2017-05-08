@@ -1,0 +1,60 @@
+body {
+	background-color: gray;
+	background-image:url(http://tub.tubgit.com/images246/ngmwyfk10om.jpg);
+	background-repeat:no-repeat;
+	
+}
+nav {
+	width: 1355px;
+	cursor: pointer;
+	font-family: calibri;
+}
+
+ul {
+	list-style-type: none;
+	padding: 15px;
+	background: gray;
+}
+
+li {
+	display:inline;
+	padding: 10px;
+	margin-right: 10px;
+	border-right: 2px solid;
+	font-size: 20px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+table {
+	font-size: 20px;
+	margin: 100px 0 0 220px;
+	border-style: solid;
+	color: white;
+	font-family: calibri;
+}
+
+h2 {
+	font-size: 40px;
+	margin: 100px 0 0 220px;
+	color: white;
+	font-family: calibri;
+}
+h1 {
+	margin:  50px 0 0 100px;
+	color: white;
+	font-family: calibri;
+}
+
+p {
+	font-size: 19px;
+	color: white;
+	font-family: calibri;
+	margin:  50px 0 0 100px;
+}
+
+.Ubethan{
+	margin: 100px auto 0 0;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type"
+		="text/html;charset=UTF-8">
+	<link href="waw.css" type="text/css" rel="stylesheet">
+	<script> 
+var elem = document.getElementById('go');
+    elem.addEventListener('click', checkForm);
+
+function checkForm() {
+	
+	var strFehler= "";
+	
+	if (!validName(document.Formular.vorname.value)) {
+		
+		strFehler += "Gültigen Vorname eingeben\n";
+	}
+		
+	if (document.Formular.nachname.value=="") 
+		
+		strFehler += "Feld Nachname ist leer\n";
+	
+		
+	if (document.Formular.hcoach.value=="") 
+		
+		strFehler += "Feld Headcoach ist leer\n";
+	
+		
+	if (document.Formular.acoach.value=="") 
+		
+		strFehler += "Feld Assistantcoach ist leer\n";
+	
+		
+	if (!validRückennummer(document.Formular.number.value)) {
+		
+		strFehler += "Gültige Nummer eingeben!";
+	}
+	
+	
+	  if (strFehler.length>0) {
+
+    alert("Festgestellte Probleme: \n\n"+strFehler);
+
+    return(false);
+
+  }  
+}
+
+function validRückennummer(number) {
+	
+	var strRed = "^([4-9])$";
+	
+	var regex = new RegExp(strRed);
+	
+	return(regex.test(number));
+ }
+ 
+ function validName(vorname) {
+ 
+	var strRed = "^([a-zA-Z])$";
+	
+	var regex = new RegExp(strRed);
+	
+	
+	return(regex.test(vorname));
+ 
+ }
+	
+
+	
+	</script>
+	<title>Spieler hinzufügen</title>
+</head>
+
+<body>
+	<nav>
+	 <ul>
+		<li><a href="file:///C:/Users/Ubi/Desktop/Startseite.html">home</a></li>
+		<li><a href="file:///C:/Users/Ubi/Desktop/Spielerhinzufügen.html">add player</a></li>
+		<li><a href="file:///C:/Users/Ubi/Desktop/Spielerliste.html">players</a></li>
+	 </ul>
+	</nav>
+		<h2>Spieleranmeldung</h2>
+		<form name="Formular" method="post" action="" onsubmit="return checkForm()">
+		<table>
+			<tr>
+				<td>Vorname</td>
+				<td><input type="text" name="vorname"></td>
+			</tr>
+			<tr>
+				<td>Nachname</td>
+				<td><input type="text" name="nachname"></td>
+			</tr>
+			<tr>
+				<td>Verein</td>
+				<td><input type="text" name="verein"></td>
+			</tr>
+			<tr>
+				<td>Headcoach</td>
+				<td><input type="text" name="hcoach"></td>
+			</tr>
+			<tr>
+				<td>Assistant Coach</td>
+				<td><input type="text" name="acoach"></td>
+			</tr>
+			<tr>
+				<td>Aktiv</td>
+				<td><input type="checkbox" name="aktiv" value="ja"/>Ja
+					 <input type="checkbox" name="aktiv" value="nein"/>Nein</td>
+			</tr>
+			<tr>
+				<td>Position</td>
+				<td><select name="position" size="1">
+				<option value="center">Center</option>
+				<option value="guard">Guard</option>
+				<option value="power forward">Power Forward</option>
+				<option value="wing" selected="selected">Wing</option>
+				<option value="small forward">Small Forward</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Rückennummer</td>
+				<td><input type="number" name="number"></td>
+			</tr>
+			<tr>
+				<td>Geburtsjahr</td>
+				<td><input type="datetime" name="jahr"></td>
+			</tr>
+			<tr>
+				<td>Favorit</td>
+				<td><input type="checkbox" name="favorit" value= ""/></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><button id="go" type"submit"> absenden</button></td>
+			</tr>
+		</table>
+	</form>
+	
+
+</body>
+
+</html>
