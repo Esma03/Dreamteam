@@ -14,7 +14,7 @@ function checkForm() {
 	
 	if (!validName(document.Formular.vorname.value)) {
 		
-		strFehler += "Gültigen Vorname eingeben\n";
+		strFehler += "GÃ¼ltigen Vorname eingeben\n";
 	}
 		
 	if (document.Formular.nachname.value=="") 
@@ -32,9 +32,9 @@ function checkForm() {
 		strFehler += "Feld Assistantcoach ist leer\n";
 	
 		
-	if (!validRückennummer(document.Formular.number.value)) {
+	if (!validRÃ¼ckennummer(document.Formular.number.value)) {
 		
-		strFehler += "Gültige Nummer eingeben!";
+		strFehler += "GÃ¼ltige Nummer eingeben!";
 	}
 	
 	
@@ -47,7 +47,7 @@ function checkForm() {
   }  
 }
 
-function validRückennummer(number) {
+function validRÃ¼ckennummer(number) {
 	
 	var strRed = "^([4-9])$";
 	
@@ -70,14 +70,14 @@ function validRückennummer(number) {
 
 	
 	</script>
-	<title>Spieler hinzufügen</title>
+	<title>Spieler hinzufÃ¼gen</title>
 </head>
 
 <body>
 	<nav>
 	 <ul>
 		<li><a href="file:///C:/Users/Ubi/Desktop/Startseite.html">home</a></li>
-		<li><a href="file:///C:/Users/Ubi/Desktop/Spielerhinzufügen.html">add player</a></li>
+		<li><a href="file:///C:/Users/Ubi/Desktop/SpielerhinzufÃ¼gen.html">add player</a></li>
 		<li><a href="file:///C:/Users/Ubi/Desktop/Spielerliste.html">players</a></li>
 	 </ul>
 	</nav>
@@ -120,7 +120,7 @@ function validRückennummer(number) {
 				</select></td>
 			</tr>
 			<tr>
-				<td>Rückennummer</td>
+				<td>RÃ¼ckennummer</td>
 				<td><input type="number" name="number"></td>
 			</tr>
 			<tr>
