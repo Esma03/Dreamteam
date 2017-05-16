@@ -1,0 +1,188 @@
+var xhr = new XMLHttpRequest();
+
+function loadAllPlayers(){
+  document.getElementById('spieler-tabelle').innerHTML = "<table class='table'><thead><tr><th>Name</th><th>Verein</th><th>Coach</th><th>Position</th><th>Nummer</th><th>Jahr</th></tr></thead></table>";
+  document.getElementById("allPlayers").className = "btn btn-default active";
+  document.getElementById("favPlayers").className = "btn btn-default";
+  xhr.open('GET', ' http://188.166.165.74:13337/api/players');
+  xhr.responseType = 'json';
+  xhr.addEventListener("readystatechange", processRequest, false);
+  xhr.send();
+}
+
+function loadFavouritePlayers(){
+  document.getElementById('spieler-tabelle').innerHTML = "<table class='table'><thead><tr><th>Name</th><th>Verein</th><th>Coach</th><th>Position</th><th>Nummer</th><th>Jahr</th></tr></thead></table>";
+  document.getElementById("allPlayers").className = "btn btn-default";
+  document.getElementById("favPlayers").className = "btn btn-default active";
+  xhr.open('GET', ' http://188.166.165.74:13337/api/players?favorites=true');
+  xhr.responseType = 'json';
+  xhr.addEventListener("readystatechange", processRequest, false);
+  xhr.send();
+}
+
+function processRequest() {
+  if (xhr.readyState == 4 && xhr.status == 200) {
+    var data = xhr.response;
+
+    if (data !== null) {
+        console.log(data); // Parsed JSON object
+
+        var html = "<table class='table'><thead><tr><th>Name</th><th>Verein</th><th>Coach</th><th>Position</th><th>Nummer</th><th>Jahr</th></tr></thead><tbody>";
+
+        for (var i=0;i<data.length;i++){
+          var name = data[i].name;
+          var vorname = data[i].vorname;
+          var verein = data[i].club;
+          var coach = data[i].coach;
+          var position = data[i].position;
+          var nummer = data[i].number;
+          var jahr = data[i].year;
+          html = html + "<tr><td>"+vorname+" "+name+"</td>";
+          html = html + "<td>"+verein+"</td>";
+          html = html + "<td>"+coach+"</td>";
+          html = html + "<td>"+position+"</td>";
+          html = html + "<td>"+nummer+"</td>";
+          html = html + "<td>"+jahr+"</td></tr>";
+        }
+
+        document.getElementById('spieler-tabelle').innerHTML = html;
+    }
+  }else {
+    console.log(xhr.readyState);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**	
+	function holeDaten(){
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', 'http://188.166.165.74:13337/api/players');
+		xhr.responseType = 'json';
+
+		xhr.onload = function(){
+		var data = xhr.response;
+		if(data !== null){
+
+			console.log(data);
+	
+		for(var i = 0; i < data.length; i++){
+
+          var zeile = document.getElementById('Ubethan').insertRow(2);
+
+          var obj = data[i];
+          for(var key in obj){
+            var attrName = key;
+            var attrValue = obj[key];
+
+            var feld = document.createElement("td");
+            feld.innerHTML = attrValue;
+            zeile.appendChild(feld);
+          }
+        }
+    }
+
+  };
+  xhr.send(null);
+
+}
+
+	function holeFavoriten(){
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', ' http://188.166.165.74:13337/api/players?favorites=true');
+		xhr.responseTyp = 'json';
+
+		xhr.onload = function(){
+			var data = xhr.response;
+
+			if(data != null){
+			console.log(data);
+
+				for(var i = 0; i < data.length; i++){
+					var zeile = document.getElementById('Ubethan').insertRow(2);
+					var obj = data[i];
+
+					for(var key in obj){
+						var attrName = key;
+						var attrValue = obj[key];
+
+						var feld = document.createElement("td");
+						feld.innerHTML = attrValue;
+						zeile.appendChild(feld);
+					}	
+				}
+			}
+		};
+		xhr.send(null);
+	}
+	
+	**/
