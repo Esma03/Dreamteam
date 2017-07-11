@@ -3,11 +3,11 @@ var senden = document.getElementById('senden');
 var socket = io.connect('http://localhost:1337');
 
 
-//HTML ELEMENTE HOLEN FÜE Chat
+//HTML ELEMENTE 
 var message = document.getElementById('message');
 var senden = document.getElementById('senden');
 var chatAnzeige = document.getElementById('chatAnzeige');
-//wegen bug
+
 console.log(senden);
 
 
@@ -15,7 +15,7 @@ var text = prompt('Sie haben den Chat betreten, bitte gib deinen Namen ein', 'Us
 chatAnzeige.innerHTML += '<p>' + 'Wilkommen im Chat' + ' ' + text + '</p>';
 console.log(text);
 
-//Click chat daten senden
+//Daten senden
 senden.addEventListener('click', function(){
 
 	socket.emit('chat', {
@@ -27,7 +27,7 @@ senden.addEventListener('click', function(){
 
 
 
-//Frontend auf 'Chat' event hören
+//Frontend 
 socket.on('chat', function(data){
 	chatAnzeige.innerHTML += '<p>' + data.chatName + ': ' + data.message + '</p>';
 });
