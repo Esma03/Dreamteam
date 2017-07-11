@@ -5,7 +5,7 @@ var index = app.listen(1337, function(){
   console.log('Example app listening');
 });
 app.use(express.static('websites'));
-//Socket Setup//////////////////////////////////////////////////
+//Socket Setup/
 
 var socket = require('socket.io');
 var io = socket(index);
@@ -14,15 +14,15 @@ io.on('connection',function(socket){
   console.log('Socket Verbindung hergestellt', socket.id);
 
 
-  //auf chat emit reagieren ,, data daten die gesendet werden
+  //data daten die gesendet werden
   socket.on('chat', function(data){
-    //wegen bug gemacht
+    //Ausgabe in der Konsole
     console.log('message: ' + data);
-    //remote call
+   
     io.sockets.emit('chat', data);
   });
 });
-/////////////////////////////////////////////////////////////////////////////
+
 
 app.get('/api/players', function(req, res){
   var fav = req.query.favorites;
