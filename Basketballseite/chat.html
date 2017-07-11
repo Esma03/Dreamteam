@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8 "/>
+	<link href="waw.css" type="text/css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+	
+  <title>Chat</title>
+</head>
+<body>
+	<nav>
+	 <ul>
+		<li><a href="Startseite.html">Home</a></li>
+		<li><a href="Spielerhinzufügen.html">add player</a></li>
+		<li><a href="Spielerliste.html">players</a></li>
+    <li><a href="chat.html">chat</a></li>
+	 </ul>
+	</nav>
+
+	<h1 id="Chatsprung">Chat</h1>
+      <div id="chat">
+
+          <div id="chatAnzeige" cols="35" rows="4" ></div>
+          <br/>
+        <!--<input id="chatName" type="text" placeholder="Name"/>-->
+        <input id="message" type="text" placeholder="Message"/>
+        <button id="senden">Senden</button>
+<script src="chat.js"></script>
+      </div>
+
+
+</body>
+
+</html>
