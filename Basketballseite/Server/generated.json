@@ -1,0 +1,222 @@
+[
+  {
+    "_id": "59490eadc4be0e60c973766b",
+    "name": "Cooper",
+    "vorname": "Janna",
+    "club": "EXOSPACE",
+    "coach": "Romero Conner",
+    "position": "Small Forward",
+    "number": 14,
+    "year": 1979,
+    "favorite": false
+  },
+  {
+    "_id": "59490eadd859f9e9fba4fa74",
+    "name": "Patel",
+    "vorname": "Tami",
+    "club": "HATOLOGY",
+    "coach": "Kimberley Marshall",
+    "position": "Power Forward",
+    "number": 8,
+    "year": 1933,
+    "favorite": false
+  },
+  {
+    "_id": "59490eadbc473f449046d841",
+    "name": "Aguirre",
+    "vorname": "Iva",
+    "club": "KATAKANA",
+    "coach": "Rhonda Ware",
+    "position": "Wing",
+    "number": 14,
+    "year": 1991,
+    "favorite": false
+  },
+  {
+    "_id": "59490ead6e258b75ad98a41c",
+    "name": "Macdonald",
+    "vorname": "Marlene",
+    "club": "NETERIA",
+    "coach": "Audrey Deleon",
+    "position": "Center",
+    "number": 11,
+    "year": 1980,
+    "favorite": true
+  },
+  {
+    "_id": "59490eaddfccef4cce190c7e",
+    "name": "Merrill",
+    "vorname": "Powell",
+    "club": "VIAGRAND",
+    "coach": "Hinton Gentry",
+    "position": "Power Forward",
+    "number": 7,
+    "year": 2013,
+    "favorite": true
+  },
+  {
+    "_id": "59490eadb19460837d79479d",
+    "name": "Wilson",
+    "vorname": "Morrison",
+    "club": "KAGE",
+    "coach": "Jacklyn Evans",
+    "position": "Guard",
+    "number": 5,
+    "year": 1991,
+    "favorite": true
+  },
+  {
+    "_id": "59490ead5b6271678f95485c",
+    "name": "Sweet",
+    "vorname": "Sanders",
+    "club": "ILLUMITY",
+    "coach": "Michael Patterson",
+    "position": "Center",
+    "number": 13,
+    "year": 1999,
+    "favorite": false
+  },
+  {
+    "_id": "59490ead00342e24cbf6f2be",
+    "name": "Bolton",
+    "vorname": "Adriana",
+    "club": "ESCENTA",
+    "coach": "Sabrina Wilkinson",
+    "position": "Guard",
+    "number": 6,
+    "year": 1944,
+    "favorite": false
+  },
+  {
+    "_id": "59490eadafb0de929050b961",
+    "name": "Riggs",
+    "vorname": "Samantha",
+    "club": "FIBEROX",
+    "coach": "Alma Irwin",
+    "position": "Power Forward",
+    "number": 11,
+    "year": 1940,
+    "favorite": false
+  },
+  {
+    "_id": "59490ead474593a4d77d16fe",
+    "name": "Chambers",
+    "vorname": "Selma",
+    "club": "UNISURE",
+    "coach": "Winifred Hammond",
+    "position": "Wing",
+    "number": 15,
+    "year": 1966,
+    "favorite": true
+  },
+  {
+    "_id": "59490ead73f4f801f23fa5c7",
+    "name": "Donovan",
+    "vorname": "Fischer",
+    "club": "SUREMAX",
+    "coach": "Davenport Trujillo",
+    "position": "Center",
+    "number": 13,
+    "year": 1958,
+    "favorite": false
+  },
+  {
+    "_id": "59490ead6a612c1544710a99",
+    "name": "Crawford",
+    "vorname": "Tammy",
+    "club": "MEDALERT",
+    "coach": "Eloise Atkinson",
+    "position": "Guard",
+    "number": 10,
+    "year": 1963,
+    "favorite": true
+  },
+  {
+    "_id": "59490eadb12add8ddd4bce68",
+    "name": "Bird",
+    "vorname": "Jolene",
+    "club": "QUIZKA",
+    "coach": "Agnes Johnson",
+    "position": "Power Forward",
+    "number": 5,
+    "year": 1962,
+    "favorite": true
+  },
+  {
+    "_id": "59490eada822d4b34d2d8c56",
+    "name": "Graham",
+    "vorname": "Candace",
+    "club": "FANFARE",
+    "coach": "Collins Larsen",
+    "position": "Wing",
+    "number": 10,
+    "year": 1987,
+    "favorite": false
+  },
+  {
+    "_id": "59490ead58e80c41b59dab4d",
+    "name": "Peck",
+    "vorname": "Cindy",
+    "club": "MANTRO",
+    "coach": "Maura Hendrix",
+    "position": "Wing",
+    "number": 12,
+    "year": 1935,
+    "favorite": false
+  },
+  {
+    "_id": "59490ead2e8bc9bb1810e2d3",
+    "name": "Mcneil",
+    "vorname": "Palmer",
+    "club": "ZILCH",
+    "coach": "Paul Trevino",
+    "position": "Guard",
+    "number": 14,
+    "year": 1952,
+    "favorite": true
+  },
+  {
+    "_id": "59490ead269acabb0010fca1",
+    "name": "Emerson",
+    "vorname": "Lorrie",
+    "club": "BIZMATIC",
+    "coach": "Althea Knox",
+    "position": "Power Forward",
+    "number": 7,
+    "year": 1946,
+    "favorite": true
+  },
+  {
+    "_id": "59490eade47825a7b14ce0e1",
+    "name": "Roth",
+    "vorname": "Autumn",
+    "club": "INJOY",
+    "coach": "Marilyn Rogers",
+    "position": "Power Forward",
+    "number": 14,
+    "year": 1989,
+    "favorite": false
+  },
+  {
+    "_id": "59490ead0343e18a8cf816ec",
+    "name": "Mcclain",
+    "vorname": "Dudley",
+    "club": "AQUAZURE",
+    "coach": "Lynne Hansen",
+    "position": "Guard",
+    "number": 13,
+    "year": 1977,
+    "favorite": true
+  },
+  {
+    "_id": "59490ead1736e7526560c1b9",
+    "name": "Oneil",
+    "vorname": "Jaclyn",
+    "club": "ZENSURE",
+    "coach": "Delores Potter",
+    "position": "Wing",
+    "number": 10,
+    "year": 1958,
+    "favorite": false
+  }
+]
